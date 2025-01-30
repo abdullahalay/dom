@@ -22,18 +22,18 @@
                         <div class="stats shadow">
                             <div class="stat">
                                 <div class="stat-title">Available Balance</div>
-                                <div class="stat-value">89,400</div>
+                                <div id="current-balance" class="stat-value">89400</div>
                                 <div class="stat-desc">21% more than last month</div>
                             </div>
                         </div>
                     </div>
                     <div class="divider"></div>
                     <div>
-                        <button class="btn btn-lg">Add Money</button>
-                        <button class="btn btn-lg">Cash out</button>
+                        <button id="button-add-money" class="btn btn-lg">Add Money</button>
+                        <button id="cash-out-button" class="btn btn-lg">Cash out</button>
                     </div>
                   <div class="divider"></div>
-                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+                  <div id="Add-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -54,9 +54,36 @@
                     </form>
 
                 </div>
+
+                <div id="cash-out-form" class=" hidden   card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Amount</span>
+                      </label>
+                      <input id="Total-amount" type="text" placeholder="amount" class="input input-bordered " autocomplete="off" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin</span>
+                      </label>
+                      <input id="Cash-pin-number" type="password" placeholder="pin number" class="input input-bordered" required />
+                    
+                    </div>
+                    <div class="form-control mt-2">
+                      <button id="Cash-button-clicked" class="btn btn-primary">cash Out</button>
+                    </div>
+                  </form>
+
+              </div>
+               
+
             </div>
         </div>
     </main>
+    <script src="js/home.js"></script>
+    <script src="js/cashOut.js"></script>
+    <script src="js/hidden.js"></script>
 
 </body>
 
